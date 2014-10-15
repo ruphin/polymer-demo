@@ -1,0 +1,13 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "authors": [
+    "Goffert van Gool <goffert@phusion.nl>"
+  ],
+  "description": "polymerDemo",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.2"
+  }
+}

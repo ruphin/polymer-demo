@@ -62,14 +62,14 @@ gulp.task('fonts', function() {
 
 // Styles
 gulp.task('styles', function() {
-	return gulp.src('app/styles/**/*.scss')
+	return gulp.src('app/**/*.scss')
 		.pipe(sass({
 			style: 'expanded',
 			onError: function() {
 				exitCode = 1;
 			}
 		}))
-		.pipe(gulp.dest('dist/styles'));
+		.pipe(gulp.dest('dist'));
 });
 
 // Elements HTML
@@ -95,25 +95,31 @@ gulp.task('base', function() {
 		.pipe(gulp.dest('dist/'));
 });
 
+// Bower
+gulp.task('bower', function() {
+	return bower('dist/vendor');
+});
+
 // Clean
 gulp.task('clean', function() {
-	return gulp.src('dist', { read: false }) // much faster
+	return gulp.src('dist/*', { read: false }) // much faster
 		.pipe(rimraf());
 });
 
 // Build task
 gulp.task('build', ['clean'], function() {
-	gulp.start('elements', 'styles', 'coffee', 'base');
+	gulp.start('elements', 'styles', 'coffee', 'base', 'bower');
 });
 
 // Watch task
 gulp.task('watch', function() {
+	var watch_root = process.cwd();
 
 	// Watch .scss files
-	gulp.watch(watch_root + '/app/styles/**/*.scss', ['styles']);
+	gulp.watch(watch_root + '/app/**/*.scss', ['styles']);
 
 	// Watch element .html files
-	gulp.watch(watch_root + '/app/elements/**/*.html', ['elements']);
+	gulp.watch(watch_root + '/app/**/*.html', ['elements']);
 
 	// Watch .coffee files
 	gulp.watch(watch_root + '/app/**/*.coffee', ['coffee']);
