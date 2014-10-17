@@ -1,11 +1,18 @@
 Polymer("phusion-boards", {
   loadData: function() {
     var loader;
+    this.clearData();
     loader = Board.get();
     return loader.on('data', (function(_this) {
       return function(data) {
         return _this.boards = data;
       };
     })(this));
+  },
+  unloadData: function() {
+    return this.clearData();
+  },
+  clearData: function() {
+    return this.boards = null;
   }
 });

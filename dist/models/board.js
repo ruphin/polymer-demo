@@ -5,17 +5,18 @@ var Board,
 Board = (function(_super) {
   __extends(Board, _super);
 
-  function Board() {
-    return Board.__super__.constructor.apply(this, arguments);
+  function Board(data) {
+    data.url = "#/boards/" + data.id + "/";
+    Board.__super__.constructor.call(this, data);
   }
 
   return Board;
 
-})(Notification);
+})(Model);
 
 Board.get = function(params) {
   var processor;
-  processor = Api.get("boards", params);
+  processor = Api.get("http://demo2452101.mockable.io/boards.json", params);
   processor.processData((function(_this) {
     return function(boards) {
       var instance, _i, _len, _results;
