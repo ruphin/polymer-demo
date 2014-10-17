@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACL,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;;AACf,eAAU;EACT,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM",
-"sources": ["../../elements/greeter.scss"],
-"names": [],
-"file": "greeter.css"
-}

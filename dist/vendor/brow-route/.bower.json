@@ -1,0 +1,20 @@
+{
+  "name": "brow-route",
+  "version": "0.0.7",
+  "main": "dist/brow-route.js",
+  "ignore": [
+    "*",
+    "!dist/brow-route.js"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/phusion/brow-route.js",
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.7",
+    "commit": "da459a12906186933a79f0e0fc3e2243f548ab30"
+  },
+  "_source": "git://github.com/phusion/brow-route.js.git",
+  "_target": "~0.0.7",
+  "_originalSource": "brow-route"
+}

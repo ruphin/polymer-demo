@@ -31,33 +31,9 @@ process.on('exit', function (code) {
 	}
 });
 
-function logAndExitWithError(e) {
-	gutil.log(e);
-	exitCode = 1;
-}
-
 // Bower
 gulp.task('bower', function() {
-	return bower('vendor/components')
-		.pipe(gulp.dest('dist/vendor/components'));
-});
-
-// Vendor
-gulp.task('vendor', function() {
-	return gulp.src(['vendor/**/*.js', '!vendor/components'])
-		//.pipe(jshint('.jshintrc'))
-		//.pipe(jshint.reporter('default'))
-		//.pipe(concat('main.js'))
-		//.pipe(gulp.dest('dist/scripts'))
-		//.pipe(rename({ suffix: '.min' }))
-		//.pipe(uglify())
-		.pipe(gulp.dest('dist/vendor'));
-});
-
-// Fonts
-gulp.task('fonts', function() {
-	return gulp.src(['fonts/**/*'])
-		.pipe(gulp.dest('dist/fonts'));
+	return bower('dist/vendor/');
 });
 
 // Styles
@@ -72,20 +48,17 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('dist'));
 });
 
-// Elements HTML
-gulp.task('elements', function() {
-	return gulp.src('app/elements/**/*.html')
-		.pipe(gulp.dest('dist/elements/'));
+// HTML
+gulp.task('html', function() {
+	return gulp.src('app/**/*.html')
+		.pipe(gulp.dest('dist/'));
 });
 
 // Coffeescripts
 gulp.task('coffee', function() {
 	return gulp.src('app/**/*.coffee')
 		.pipe(plumber())
-		.pipe(
-			coffee({ bare: true })
-			.on('error', logAndExitWithError)
-		)
+		.pipe(coffee({ bare: true }))
 		.pipe(gulp.dest('dist'));
 });
 
@@ -95,20 +68,15 @@ gulp.task('base', function() {
 		.pipe(gulp.dest('dist/'));
 });
 
-// Bower
-gulp.task('bower', function() {
-	return bower('dist/vendor');
-});
-
 // Clean
 gulp.task('clean', function() {
-	return gulp.src('dist/*', { read: false }) // much faster
+	return gulp.src(['dist/*', '.sass-cache'], { read: false }) // much faster
 		.pipe(rimraf());
 });
 
 // Build task
 gulp.task('build', ['clean'], function() {
-	gulp.start('elements', 'styles', 'coffee', 'base', 'bower');
+	gulp.start('html', 'styles', 'coffee', 'base', 'bower');
 });
 
 // Watch task
@@ -119,7 +87,7 @@ gulp.task('watch', function() {
 	gulp.watch(watch_root + '/app/**/*.scss', ['styles']);
 
 	// Watch element .html files
-	gulp.watch(watch_root + '/app/**/*.html', ['elements']);
+	gulp.watch(watch_root + '/app/**/*.html', ['html']);
 
 	// Watch .coffee files
 	gulp.watch(watch_root + '/app/**/*.coffee', ['coffee']);

@@ -1,0 +1,16 @@
+<script src="boards.js"></script>
+<polymer-element
+	name="phusion-boards"
+	extends="phusion-view">
+	<template>
+		<phusion-navbar></phusion-navbar>
+
+		<div class="title">Boards</div>
+
+		<template repeat="{{ board in boards }}">
+			<a href="{{ board.url }}">{{ board.name }}</a>
+		</template>
+
+		<link rel="stylesheet" href="boards.css">
+	</template>
+</polymer-element>

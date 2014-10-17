@@ -1,0 +1,16 @@
+<script src="board.js"></script>
+<polymer-element
+	name="phusion-board"
+	extends="phusion-view">
+	<template>
+		<phusion-navbar></phusion-navbar>
+
+		<div class="title">Messages:</div>
+
+		<template repeat="{{ message in messages }}">
+			<phusion-message message="{{ message }}"></phusion-message>
+		</template>
+
+		<link rel="stylesheet" href="board.css">
+	</template>
+</polymer-element>

@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.4.2"
+    "polymer": "Polymer/polymer#~0.4.2",
+    "phusion-mvc": "~0.0.1"
   }
 }

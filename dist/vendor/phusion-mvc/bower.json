@@ -1,0 +1,20 @@
+{
+  "name": "phusion-mvc",
+  "description": "A frontend MVC framework with Polymer",
+  "authors": [
+    {"name": "Goffert van Gool", "email": "<goffert@phusion.nl>"}
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phusion/phusion-mvc"
+  },
+  "main" : "dist/phusion-mvc.html",
+  "ignore" : [
+    "/*",
+    "!/dist"
+  ],
+  "dependencies": {
+    "brow-route": "~0.0.7"
+  }
+}
