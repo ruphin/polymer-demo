@@ -15,7 +15,7 @@ Board = (function(_super) {
 
 Board.get = function(params) {
   var processor;
-  processor = USApi.getData("boards", params);
+  processor = Api.get("boards", params);
   processor.processData((function(_this) {
     return function(boards) {
       var instance, _i, _len, _results;

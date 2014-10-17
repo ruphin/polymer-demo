@@ -21,14 +21,14 @@
     "brow-route": "~0.0.7"
   },
   "homepage": "https://github.com/phusion/phusion-mvc",
-  "version": "0.0.1",
-  "_release": "0.0.1",
+  "version": "0.0.2",
+  "_release": "0.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "0.0.1",
-    "commit": "25954608a21eb885d6641e7ac78c4c6718835755"
+    "tag": "0.0.2",
+    "commit": "bccd51c03cb5aa18e0722749db26dc71bb8cdf5e"
   },
   "_source": "git://github.com/phusion/phusion-mvc.git",
-  "_target": "~0.0.1",
+  "_target": "~0.0.2",
   "_originalSource": "phusion-mvc"
 }

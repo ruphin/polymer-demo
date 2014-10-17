@@ -2,5 +2,5 @@ Polymer "phusion-boards",
 
 	loadData: ->
 		loader = Board.get()
-		loader.onData (data) =>
+		loader.on 'data', (data) =>
 			@boards = data

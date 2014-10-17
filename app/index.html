@@ -9,9 +9,11 @@
 		<link rel="import" href="pages/boards/boards.html">
 		<link rel="import" href="pages/board/board.html">
 		<link rel="import" href="pages/settings/settings.html">
+
+		<script src="models/board.js"></script>
 	</head>
 	<body>
-		<phusion-boards route="/boards"></phusion-boards>
+		<phusion-boards route="/"></phusion-boards>
 		<phusion-namespace namespace="/boards/:board">
 			<phusion-board route="/"></phusion-board>
 			<phusion-settings route="/settings"></phusion-settings>
