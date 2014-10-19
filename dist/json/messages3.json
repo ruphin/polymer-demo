@@ -1,0 +1,31 @@
+[{
+    "id": 6,
+    "board": 3,
+    "timestamp": "4:41 PM",
+    "author": {
+        "id": 1,
+        "name": "Ninh",
+        "email": "ninh@phusion.nl"
+    },
+    "content": "The design of this messageboard is totally not up to standards"
+},{
+    "id": 7,
+    "board": 3,
+    "timestamp": "4:41 PM",
+    "author": {
+        "id": 2,
+        "name": "Goffert",
+        "email": "goffert@phusion.nl"
+    },
+    "content": "It's just a tech demo"
+},{
+    "id": 8,
+    "board": 3,
+    "timestamp": "4:49 PM",
+    "author": {
+        "id": 1,
+        "name": "Ninh",
+        "email": "ninh@phusion.nl"
+    },
+    "content": "Next time I'm getting a designer to work on these!"
+}]

@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "board": 1,
+    "timestamp": "2:23 PM",
+    "author": {
+        "id": 1,
+        "name": "Goffert",
+        "email": "goffert@phusion.nl"
+    },
+    "content": "Are you ready for the tech talks Hongli?"
+},{
+    "id": 2,
+    "board": 1,
+    "timestamp": "2:24 PM",
+    "author": {
+        "id": 2,
+        "name": "Hongli",
+        "email": "hongli@phusion.nl"
+    },
+    "content": "Yes"
+},{
+    "id": 3,
+    "board": 1,
+    "timestamp": "2:24 PM",
+    "author": {
+        "id": 1,
+        "name": "Goffert",
+        "email": "goffert@phusion.nl"
+    },
+    "content": "I should know, you are always prepared :)"
+}]

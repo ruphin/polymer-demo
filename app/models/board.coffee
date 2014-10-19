@@ -4,7 +4,7 @@ class Board extends Model
 		super(data)
 
 Board.get = (params) ->
-	processor = Api.get("http://demo2452101.mockable.io/boards.json", params)
+	processor = Api.get("http://0.0.0.0:8000/json/boards.json", params)
 	processor.processData (boards) =>
 		new Board(instance) for instance in boards
 	return processor

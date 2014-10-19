@@ -19,7 +19,7 @@ Message = (function(_super) {
 
 Message.get = function(params) {
   var processor;
-  processor = Api.get("http://demo2452101.mockable.io/messages.json", params);
+  processor = Api.get("http://0.0.0.0:8000/json/messages" + params.board + ".json", {});
   processor.processData((function(_this) {
     return function(messages) {
       var instance, _i, _len, _results;

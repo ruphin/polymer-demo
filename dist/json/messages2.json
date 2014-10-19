@@ -1,0 +1,21 @@
+[{
+    "id": 4,
+    "board": 2,
+    "timestamp": "9:52 PM",
+    "author": {
+        "id": 1,
+        "name": "Tinco",
+        "email": "mail@tinco.nl"
+    },
+    "content": "So stoked to visit our friends in the US again"
+},{
+    "id": 5,
+    "board": 2,
+    "timestamp": "9:54 PM",
+    "author": {
+        "id": 2,
+        "name": "Ninh",
+        "email": "ninh@phusion.nl"
+    },
+    "content": "Yeah!"
+}]

@@ -16,7 +16,7 @@ Board = (function(_super) {
 
 Board.get = function(params) {
   var processor;
-  processor = Api.get("http://demo2452101.mockable.io/boards.json", params);
+  processor = Api.get("http://0.0.0.0:8000/json/boards.json", params);
   processor.processData((function(_this) {
     return function(boards) {
       var instance, _i, _len, _results;
