@@ -9,6 +9,10 @@ Message = (function(_super) {
     return Message.__super__.constructor.apply(this, arguments);
   }
 
+  Message.prototype.instanceMembers = {
+    author: 'User'
+  };
+
   return Message;
 
 })(Model);

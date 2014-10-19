@@ -1,23 +1,25 @@
 <!doctype html>
 <html>
 	<head>
+		<script src="vendor/md5-jkmyers/md5.min.js"></script>
 		<script src="vendor/platform/platform.js"></script>
 		<link rel="import" href="vendor/polymer/polymer.html">
+
 		<link rel="import" href="vendor/phusion-mvc/dist/phusion-mvc.html">
-		<link rel="import" href="elements/header/header.html">
+
+		<link rel="import" href="elements/navbar/navbar.html">
 		<link rel="import" href="elements/message/message.html">
 		<link rel="import" href="pages/boards/boards.html">
 		<link rel="import" href="pages/board/board.html">
-		<link rel="import" href="pages/settings/settings.html">
 
 		<script src="models/board.js"></script>
 		<script src="models/message.js"></script>
+		<script src="models/user.js"></script>
 	</head>
 	<body>
 		<phusion-boards route="/"></phusion-boards>
 		<phusion-namespace namespace="/boards/:board">
 			<phusion-board route="/"></phusion-board>
-			<phusion-settings route="/settings"></phusion-settings>
 		</phusion-namespace>
 	</body>
 </html>

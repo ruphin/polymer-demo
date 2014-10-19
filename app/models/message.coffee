@@ -1,4 +1,6 @@
 class Message extends Model
+	instanceMembers:
+		author: 'User'
 
 Message.get = (params) ->
 	processor = Api.get("http://demo2452101.mockable.io/messages.json", params)

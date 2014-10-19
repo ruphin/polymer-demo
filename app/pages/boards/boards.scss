@@ -1,0 +1,23 @@
+:host {
+	margin-top: 60px;
+	padding-left: 50px;
+	padding-top: 40px;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #21232f;
+}
+
+.board {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	width: 320px;
+	border-radius: 10px;
+	background-color: #e4e2ef;
+	margin-bottom: 40px;
+	padding: 20px;
+	padding-left: 40px;
+	> .name {
+		margin-bottom: 6px;
+	}
+}

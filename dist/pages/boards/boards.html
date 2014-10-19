@@ -3,12 +3,14 @@
 	name="phusion-boards"
 	extends="phusion-view">
 	<template>
+
 		<phusion-navbar></phusion-navbar>
 
-		<div class="title">Boards</div>
-
 		<template repeat="{{ board in boards }}">
-			<a href="{{ board.url }}">{{ board.name }}</a>
+			<a class="board" href="{{ board.url }}">
+				<div class="name">{{ board.name }}</div>
+				<div class="messages">{{ board.messageCount }} Messages</div>
+			</a>
 		</template>
 
 		<link rel="stylesheet" href="boards.css">

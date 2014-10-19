@@ -1,0 +1,16 @@
+<script src="navbar.js"></script>
+<polymer-element
+	name="phusion-navbar"
+	attributes="board">
+	<template>
+
+		<template if="{{ board }}">
+			<a href="/#/">Boards</a><span> – {{ cache.boards[board].name }}</span>
+		</template>
+		<template if="{{ !board }}">
+			<span>Boards</span>
+		</template>
+
+		<link rel="stylesheet" href="navbar.css">
+	</template>
+</polymer-element>

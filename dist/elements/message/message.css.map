@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,KAAM;EACL,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,IAAI;;;AAGpB,OAAQ;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;;;AAGpB,OAAQ;EACP,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;;;AAInB,UAAW;EACV,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;;;AAGf,QAAS;EACR,UAAU,EAAE,IAAI",
+"sources": ["../../../elements/message/message.scss"],
 "names": [],
 "file": "message.css"
 }

@@ -1,3 +1,29 @@
+:host {
+  display: block;
+  min-height: 118px;
+  margin-bottom: 20px;
+}
 
+.avatar {
+  float: left;
+  height: 96px;
+  width: 96px;
+  margin-right: 30px;
+  border-radius: 12px;
+}
+
+.author {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.timestamp {
+  font-size: 30px;
+  color: #717481;
+}
+
+.content {
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=message.css.map */

@@ -9,9 +9,6 @@ Polymer("phusion-boards", {
       };
     })(this));
   },
-  unloadData: function() {
-    return this.clearData();
-  },
   clearData: function() {
     return this.boards = null;
   }

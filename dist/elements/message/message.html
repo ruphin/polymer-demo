@@ -4,7 +4,9 @@
 	attributes="message">
 	<template>
 
-		<div class="title">{{ message.title }}</div>
+		<img class="avatar" src="{{ message.author.gravatar }}"/>
+		<span class="author">{{ message.author.name }}</span>
+		<span class="timestamp">{{ message.timestamp }}</span>
 		<div class="content">{{ message.content }}</div>
 
 		<link rel="stylesheet" href="message.css">

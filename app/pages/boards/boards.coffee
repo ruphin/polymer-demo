@@ -6,8 +6,5 @@ Polymer "phusion-boards",
 		loader.on 'data', (data) =>
 			@boards = data
 
-	unloadData: () ->
-		@clearData()
-
 	clearData: () ->
 		@boards = null

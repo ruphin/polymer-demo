@@ -2,12 +2,10 @@ Polymer "phusion-board",
 
 	loadData: (params) ->
 		@clearData()
-		loader = Message.get({board: params['board']})
+		@board = params.board
+		loader = Message.get({board: @board})
 		loader.on 'data', (messages) =>
 			@messages = messages
-
-	unloadData: () ->
-		@clearData()
 
 	clearData: () ->
 		@messages = null
